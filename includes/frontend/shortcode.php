@@ -295,7 +295,7 @@ class Shortcode
 
             $html .= '<td data-label="' . esc_attr__('Actions', 'etracker') . '">';
             $html .= '<form method="post" class="etracker-action-form">';
-            wp_nonce_field('etracker_shortcode_update');
+            $html .= wp_nonce_field('etracker_shortcode_update', '_etracker_nonce', true, false);
             $html .= '<input type="hidden" name="etracker_shortcode_action" value="update_enforcement" />';
             $html .= '<input type="hidden" name="document_id" value="' . esc_attr($documentId) . '" />';
             $html .= '<input type="hidden" name="group" value="' . esc_attr($group) . '" />';
@@ -490,7 +490,11 @@ class Shortcode
             return;
         }
 
-        check_admin_referer('etracker_shortcode_update');
+        $nonce = isset($_POST['_etracker_nonce']) ? sanitize_text_field(wp_unslash($_POST['_etracker_nonce'])) : '';
+        if (! wp_verify_nonce($nonce, 'etracker_shortcode_update')) {
+            $this->errors[] = esc_html__('Security check failed. Please refresh the page and try again.', 'etracker');
+            return;
+        }
 
         $documentId = isset($_POST['document_id']) ? sanitize_text_field(wp_unslash($_POST['document_id'])) : '';
         $group = isset($_POST['group']) ? sanitize_text_field(wp_unslash($_POST['group'])) : '';
