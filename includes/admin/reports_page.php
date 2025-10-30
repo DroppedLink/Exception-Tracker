@@ -2,6 +2,7 @@
 
 namespace ETracker\Admin;
 
+use ETracker\Services\MongoConnection;
 use ETracker\Services\ReportService;
 use function add_query_arg;
 use function admin_url;
@@ -17,6 +18,7 @@ use function wp_die;
 use function wp_enqueue_style;
 use function get_date_from_gmt;
 use function get_option;
+use Throwable;
 
 class Reports_Page
 {
@@ -38,7 +40,18 @@ class Reports_Page
         $expiringDays = isset($_GET['expiring_window']) ? max(1, (int) $_GET['expiring_window']) : 45;
         $unenforcedLimit = isset($_GET['unenforced_limit']) ? max(10, (int) $_GET['unenforced_limit']) : 150;
 
-        $report = $this->reportService->compile($expiringDays, $unenforcedLimit);
+        $connection = new MongoConnection();
+        if (! $connection->is_configured()) {
+            $this->renderConfigurationWarning();
+            return;
+        }
+
+        try {
+            $report = $this->reportService->compile($expiringDays, $unenforcedLimit);
+        } catch (Throwable $exception) {
+            $this->renderErrorCard($exception->getMessage());
+            return;
+        }
 
         echo '<div class="wrap">';
         echo '<h1>' . esc_html__('ETracker Reports', 'etracker') . '</h1>';
@@ -48,6 +61,13 @@ class Reports_Page
         $this->renderExpiringTable($report['expiring'], $expiringDays);
         $this->renderUnenforcedTable($report['unenforced'], $unenforcedLimit);
 
+        echo '</div>';
+    }
+
+    private function renderConfigurationWarning(): void
+    {
+        echo '<div class="wrap">';
+        echo '<div class="notice notice-warning"><p>' . esc_html__('MongoDB connection settings are missing. Configure the ETracker connection before using reports.', 'etracker') . '</p></div>';
         echo '</div>';
     }
 
@@ -119,6 +139,13 @@ class Reports_Page
         }
 
         echo '</div>';
+        echo '</div>';
+    }
+
+    private function renderErrorCard(string $message): void
+    {
+        echo '<div class="wrap">';
+        echo '<div class="notice notice-error"><p>' . esc_html(sprintf(esc_html__('Unable to build reports: %s', 'etracker'), $message)) . '</p></div>';
         echo '</div>';
     }
 
