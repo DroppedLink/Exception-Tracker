@@ -30,6 +30,11 @@
     margin-bottom: 24px;
 }
 
+.etracker-card--info {
+    border-color: #b4cff2;
+    background: #f5f9ff;
+}
+
 .etracker-card__header {
     border-bottom: 1px solid #dcdcde;
     padding: 16px 24px;
@@ -43,6 +48,24 @@
 
 .etracker-card__body {
     padding: 16px 24px;
+}
+
+.etracker-card__description {
+    margin: 0 0 12px;
+    color: #1d2327;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.etracker-code-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #1d2327;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: .02em;
 }
 
 .etracker-card__header-row {

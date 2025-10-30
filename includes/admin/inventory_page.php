@@ -107,6 +107,8 @@ class Inventory_Page
             printf('<div class="notice notice-error"><p>%s</p></div>', esc_html($message));
         }
 
+        echo $this->renderShortcodeInfoCard();
+
         echo '<form method="get">';
         echo '<input type="hidden" name="page" value="etracker" />';
 
@@ -165,6 +167,7 @@ class Inventory_Page
         }
 
         $this->renderSummary($document);
+        echo $this->renderShortcodeInfoCard();
         $this->renderEnforcementSection('CIS', $documentId, $document['Enforced']['CIS'] ?? []);
         $this->renderEnforcementSection('Agents', $documentId, $document['Enforced']['Agents'] ?? []);
         $this->renderAuditHistory($documentId);
@@ -529,6 +532,21 @@ class Inventory_Page
         }
 
         return $value !== '' ? wp_strip_all_tags($value) : '';
+    }
+
+    private function renderShortcodeInfoCard(): string
+    {
+        $shortcode = '[etracker_inventory]';
+        $description = esc_html__('Embed the server inventory management UI on any page or dashboard using this shortcode. Only users with the manage capability will see the content.', 'etracker');
+
+        $html = '<div class="etracker-card etracker-card--info">';
+        $html .= '<div class="etracker-card__body">';
+        $html .= '<h2 class="etracker-card__title">' . esc_html__('Shortcode Available', 'etracker') . '</h2>';
+        $html .= '<p class="etracker-card__description">' . $description . '</p>';
+        $html .= '<code class="etracker-code-tag">' . esc_html($shortcode) . '</code>';
+        $html .= '</div></div>';
+
+        return $html;
     }
 
     private function formatCollectionForDisplay($values): string
