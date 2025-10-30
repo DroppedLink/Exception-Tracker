@@ -1,0 +1,770 @@
+.etracker-wrap {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 16px 40px;
+}
+
+.etracker-messages {
+    margin-bottom: 24px;
+}
+
+.etracker-message {
+    border-left: 4px solid #2271b1;
+    background-color: #f0f6fc;
+    padding: 12px 16px;
+    margin: 0 0 12px;
+    border-radius: 4px;
+}
+
+.etracker-message.error {
+    border-color: #d63638;
+    background-color: #fdeaea;
+}
+
+.etracker-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+    margin-bottom: 24px;
+}
+
+.etracker-card__header {
+    border-bottom: 1px solid #dcdcde;
+    padding: 16px 24px;
+}
+
+.etracker-card__title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.etracker-card__body {
+    padding: 16px 24px;
+}
+
+.etracker-card__header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.etracker-card__subtitle {
+    margin: 8px 0 0;
+    color: #555d66;
+    font-size: 13px;
+}
+
+.etracker-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #eff1f3;
+    color: #1d2327;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.etracker-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.etracker-summary-table th {
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .02em;
+    color: #555d66;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 12px;
+    background: #f6f7f7;
+}
+
+.etracker-summary-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eef0f2;
+}
+
+.etracker-summary-table tr:last-child th,
+.etracker-summary-table tr:last-child td {
+    border-bottom: none;
+}
+
+.etracker-summary-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.etracker-summary-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 220px;
+}
+
+.etracker-summary-heading__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #636c73;
+}
+
+.etracker-summary-heading__value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d2327;
+    word-break: break-word;
+}
+
+.etracker-summary-metrics {
+    display: inline-flex;
+    gap: 12px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.etracker-summary-metric {
+    background: #f7f9fb;
+    border: 1px solid #dce1e6;
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 140px;
+}
+
+.etracker-summary-metric__value {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d2327;
+}
+
+.etracker-summary-metric__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: #5a626a;
+}
+
+.etracker-summary-metric.is-warning {
+    border-color: #f3c369;
+    background: #fff7df;
+}
+
+.etracker-summary-metric.is-info {
+    border-color: #2271b1;
+    background: #ebf4fc;
+}
+
+.etracker-report-filters {
+    margin-bottom: 24px;
+}
+
+.etracker-report-filters__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: end;
+}
+
+.etracker-report-filters__grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    color: #1d2327;
+}
+
+.etracker-report-filters__grid input[type="number"] {
+    width: 100%;
+    min-height: 38px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    padding: 6px 8px;
+}
+
+.etracker-report-filters__actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.etracker-report-table-wrapper {
+    overflow-x: auto;
+}
+
+.etracker-report-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 760px;
+}
+
+.etracker-report-table th,
+.etracker-report-table td {
+    border-bottom: 1px solid #eef0f2;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.etracker-report-table thead th {
+    background: #f6f7f7;
+    font-weight: 600;
+    color: #1d2327;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .04em;
+}
+
+.etracker-report-table tbody tr:hover {
+    background: #fbfbfb;
+}
+
+.etracker-report-groups {
+    margin-top: 24px;
+}
+
+.etracker-report-group-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.etracker-report-group-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fb;
+    border: 1px solid #e2e4e7;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+.etracker-report-group {
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.etracker-report-count {
+    font-weight: 600;
+    color: #2271b1;
+}
+
+.etracker-report-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.etracker-report-subtext {
+    font-size: 11px;
+    color: #555d66;
+}
+
+.etracker-summary-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.etracker-summary-grid__cell {
+    background: #f7f9fb;
+    border: 1px solid #e2e4e7;
+    border-radius: 6px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.etracker-summary-grid__label {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .05em;
+    color: #636c73;
+}
+
+.etracker-summary-grid__value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d2327;
+    word-break: break-word;
+}
+
+.etracker-enforcement-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.etracker-enforcement-table thead th {
+    background: #f6f7f7;
+    color: #1d2327;
+    font-weight: 600;
+    padding: 12px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.etracker-enforcement-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eef0f2;
+    vertical-align: top;
+}
+
+.etracker-enforcement-table tr:last-child td {
+    border-bottom: none;
+}
+
+.etracker-enforcement-row.exception-active {
+    background: #fff7f7;
+    border-left: 4px solid #c4302b;
+}
+
+.etracker-enforcement-row:hover {
+    background: #fdfdfd;
+}
+
+.etracker-enforcement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.etracker-enforcement-item {
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 20px 22px;
+    background: #fff;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.etracker-enforcement-item:hover {
+    border-color: #b3b6bd;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.etracker-enforcement-item.has-exception {
+    border-left: 4px solid #c4302b;
+}
+
+.etracker-enforcement-item.is-not-enforced:not(.has-exception) {
+    border-left: 4px solid #d63638;
+}
+
+.etracker-enforcement-item__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.etracker-enforcement-item__key {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.etracker-enforcement-item__statuses {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.etracker-status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .01em;
+    background: #dcdcde;
+    color: #1d2327;
+}
+
+.etracker-status-pill.is-success {
+    background: #2271b1;
+    color: #fff;
+}
+
+.etracker-status-pill.is-alert {
+    background: #d63638;
+    color: #fff;
+}
+
+.etracker-status-pill.is-warning {
+    background: #f0b849;
+    color: #1d2327;
+}
+
+.etracker-enforcement-item__meta {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-bottom: 18px;
+}
+
+.etracker-meta-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.etracker-meta-field__label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #636c73;
+}
+
+.etracker-meta-field__value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d2327;
+    word-break: break-word;
+}
+
+.etracker-enforcement-item__form {
+    border-top: 1px solid #e7eaed;
+    padding-top: 18px;
+}
+
+.etracker-form-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    align-items: flex-start;
+}
+
+.etracker-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.etracker-form-field--checkbox {
+    align-self: end;
+}
+
+.etracker-form-field--wide {
+    grid-column: 1 / -1;
+}
+
+.etracker-form-field--half {
+    min-width: 220px;
+}
+
+.etracker-form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    color: #1d2327;
+    font-weight: 600;
+}
+
+.etracker-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.etracker-form-label select,
+.etracker-form-label input[type="text"],
+.etracker-form-label input[type="date"],
+.etracker-form-label textarea {
+    min-height: 38px;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1d2327;
+    background: #fff;
+}
+
+.etracker-form-label textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+.etracker-toggle input {
+    width: 18px;
+    height: 18px;
+}
+
+.etracker-help-text {
+    display: block;
+    font-size: 12px;
+    color: #636c73;
+    font-weight: 400;
+}
+
+.etracker-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 1 / -1;
+    margin-top: 4px;
+}
+
+.etracker-enforcement-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.etracker-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 999px;
+    background: #dcdcde;
+    color: #1d2327;
+}
+
+.etracker-pill.active {
+    background: #2271b1;
+    color: #fff;
+}
+
+.etracker-pill.warning {
+    background: #d63638;
+    color: #fff;
+}
+
+.etracker-action-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.etracker-action-form select,
+.etracker-action-form input[type="text"],
+.etracker-action-form textarea {
+    min-height: 38px;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+    padding: 6px 8px;
+    font-size: 14px;
+}
+
+.etracker-action-form textarea {
+    min-width: 220px;
+    min-height: 70px;
+}
+
+.etracker-action-form .button {
+    height: 38px;
+}
+
+.etracker-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #2271b1;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 0 18px;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.etracker-button:hover,
+.etracker-button:focus {
+    background: #135e96;
+    color: #fff;
+}
+
+.etracker-button.secondary {
+    background: #f0f0f1;
+    color: #1d2327;
+    border: 1px solid #d7d8da;
+}
+
+.etracker-button.secondary:hover,
+.etracker-button.secondary:focus {
+    background: #e4e4e7;
+    color: #1d2327;
+}
+
+.etracker-search-form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-bottom: 24px;
+}
+
+.etracker-search-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    color: #1d2327;
+}
+
+.etracker-search-form input {
+    margin-top: 6px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    border: 1px solid #8c8f94;
+}
+
+.etracker-search-actions {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.etracker-search-results {
+    overflow-x: auto;
+}
+
+.etracker-search-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+}
+
+.etracker-search-table th,
+.etracker-search-table td {
+    border-bottom: 1px solid #eef0f2;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.etracker-search-table thead th {
+    background: #f6f7f7;
+    font-weight: 600;
+}
+
+.etracker-search-table tbody tr:hover {
+    background: #fdfdfd;
+}
+
+.etracker-empty-state {
+    padding: 24px;
+    text-align: center;
+    border: 1px dashed #dcdcde;
+    border-radius: 6px;
+    color: #555d66;
+}
+
+.etracker-back-link {
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.etracker-back-link a {
+    text-decoration: none;
+}
+
+@media (max-width: 782px) {
+    .etracker-summary-intro {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .etracker-summary-metrics {
+        width: 100%;
+    }
+
+    .etracker-summary-metric {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .etracker-summary-heading__value {
+        font-size: 22px;
+    }
+
+    .etracker-action-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .etracker-action-form textarea,
+    .etracker-action-form input[type="text"] {
+        width: 100%;
+    }
+
+    .etracker-enforcement-table thead {
+        display: none;
+    }
+
+    .etracker-enforcement-table tr {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .etracker-enforcement-table td {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: none;
+    }
+
+    .etracker-enforcement-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #1d2327;
+        padding-right: 12px;
+    }
+
+    .etracker-enforcement-item__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .etracker-enforcement-item__statuses {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .etracker-enforcement-item__meta {
+        grid-template-columns: 1fr;
+    }
+
+    .etracker-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .etracker-form-field--checkbox {
+        align-self: flex-start;
+    }
+}
+
+

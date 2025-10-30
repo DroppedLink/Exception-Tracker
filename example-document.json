@@ -1,0 +1,4195 @@
+{
+    _id: ObjectId('67d31e2cadb6243f3d157569'),
+    ESD: {
+        server_id: 'wopspapp01.corp.chartercom.com',
+        id: '88182',
+        fqdn: 'wopspapp01.corp.chartercom.com',
+        hostname: 'wopspapp01',
+        domain: 'corp.chartercom.com',
+        team_id: 'EDC :: WinOps, EDC :: HW Engineering',
+        applications: [],
+        instances: [
+            {
+                name: 'WINDOWS OPERATIONS MANAGEMENT-DEV',
+                status: 'installed',
+                id: '7000',
+                external_ref_id: '948d24556d39c5e379c8bd4bda85f48eec8efd94ac',
+                reference_code: 'mowhl',
+                source: 'csm',
+                app_id: 'APP1943',
+                criticality: 'Low',
+                owned_by: {
+                    name: 'Rose, Douglas P (drose1)',
+                    email: null
+                },
+                managed_by: {
+                    name: 'Bruneck, Brian C (P2761957)',
+                    email: null
+                },
+                gvp: {
+                    name: 'Roach, Steven A (P2136552)',
+                    email: null
+                },
+                aka: null
+            }
+        ],
+        application: null,
+        instance: {
+            name: 'WINDOWS OPERATIONS MANAGEMENT-DEV',
+            status: 'installed',
+            id: '7000',
+            external_ref_id: '948d24556d39c5e379c8bd4bda85f48eec8efd94ac',
+            reference_code: 'mowhl',
+            source: 'csm',
+            app_id: 'APP1943',
+            criticality: 'Low',
+            owned_by: {
+                name: 'Rose, Douglas P (drose1)',
+                email: null
+            },
+            managed_by: {
+                name: 'Bruneck, Brian C (P2761957)',
+                email: null
+            },
+            gvp: {
+                name: 'Roach, Steven A (P2136552)',
+                email: null
+            },
+            aka: null
+        },
+        system: {
+            description: 'Windows Operations Utility server',
+            environment: 'Production',
+            node_type: null,
+            type: 'App',
+            install_date: '2015-01-30T00:00:00+00:00',
+            fcid: null,
+            criticality: null,
+            sr_number: null,
+            cluster_assets: null,
+            legacy: 'Blue - BlueINF',
+            proposed_decom_date: null,
+            backup_types: 'NetBackup',
+            mfa: 'Delinea'
+        },
+        hardware: {
+            name: 'VMware - Virtual Machine (VMWare) - Server',
+            vendor: 'VMware',
+            firmware: null,
+            oob_info: 'https://d05nutlp0002.twcable.com',
+            virtual_cluster: 'NCE-Win-01',
+            parent_asset: null,
+            cpu: {
+                count: 2
+            },
+            memory: {
+                total_mb: 8192
+            },
+            model: 'Virtual Machine (VMWare)',
+            type: 'Server',
+            virtual_cluster_id: null,
+            collected_at: '2025-10-30T11:19:05.383100+00:00'
+        },
+        site: {
+            raw: 'Charlotte, NC 8730',
+            parsed: {
+                city: 'Charlotte',
+                state: 'NC 8730'
+            }
+        },
+        site_name: 'National Center East (NCE)',
+        os: {
+            full_name: 'Microsoft Windows Server Standard 2022 x64',
+            id: '1972',
+            latest_patch: null,
+            patch_method: 'Corporate Yes Reboot',
+            patch_server: 'ncepatanxxa001.corp.chartercom.com',
+            patch_cycle: 'Maintenance Cycle 19',
+            base_name: 'Microsoft Windows',
+            edition: 'Server Standard',
+            version: '2022',
+            architecture: 'x64',
+            release: null,
+            initial_release_date: '2021-08-18T00:00:00+00:00',
+            eos_date: '2026-10-13T00:00:00+00:00',
+            extended_eos_date: '2031-10-14T00:00:00+00:00',
+            'import': 'EDC Standards'
+        },
+        network: {
+            primary_ip: '142.136.224.20',
+            monitor_interface: 'Primary IP',
+            monitoring_services: 'CPMIT,Tanium',
+            syslog: 'Splunk',
+            primary_ip_name: '314-142.136.224.20(CharlotteNC8730: 142.136.224.0/24)',
+            other_ip_names: '241-10.64.170.47(CharlotteNC8730-CDC-MSV: 10.64.170.0/24)',
+            zone_name: 'CharlotteNC8730: 142.136.224.0/24',
+            collected_at: '2025-10-30T11:19:05.383100+00:00'
+        },
+        contacts: {
+            primary_admin: {
+                name: 'DL-EIO-Windows-HOSS',
+                email: 'DL-EIO-Windows-HOSS@charter.com'
+            },
+            secondary_admin: {
+                name: 'Brian Bruneck',
+                email: 'Brian.Bruneck@charter.com'
+            },
+            rfc_contact: null,
+            rfc_notification: null
+        },
+        metadata: {
+            import_date: '2025-10-30T11:19:05.383100+00:00',
+            last_updated: '2025-10-30T11:19:05.383100+00:00',
+            source: 'esd_api',
+            modified: '2025-10-29T10:40:05+00:00',
+            esd_created: '2015-01-30T10:09:36+00:00'
+        }
+    },
+    Enforced: {
+        CIS: {
+            '1_1_1': {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: []
+            },
+            '1_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_3_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_3_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_4_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_4_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_4_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_5_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_5_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_5_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_6_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_6_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_6_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_7_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_7_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_8_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_8_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_8_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_8_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_1_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_3_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_3_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_3_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_4_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_4_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_5_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_5_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_5_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_6_1_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_7_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_8_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '1_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_11': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_12': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_13': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_14': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_15': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_16': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_17': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_18': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_2_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_3_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_3_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_3_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_3_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_3_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '3_4_2_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_1_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_2_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '4_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_1_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_11': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_14': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_15': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_16': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_17': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_18': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_19': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_20': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_2_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_3_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_4_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_4_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_5_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_5_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_5_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_5_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_1_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '5_6_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_11': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_12': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_13': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_14': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_1_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_1': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_10': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_11': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_12': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_13': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_14': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_15': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_16': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_2': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_3': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_4': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_5': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_6': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_7': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_8': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            '6_2_9': {
+                enforced: true,
+                platforms: [
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            }
+        },
+        Agents: {
+            Splunk: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            Flexera: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            CrowdStrike: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'rhel9'
+                ],
+                hardware: [],
+                environment: []
+            },
+            Zabbix: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            Qualys: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            Delinea: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            Symantec_MFA: {
+                enforced: false,
+                platforms: [
+                    'windows'
+                ],
+                hardware: []
+            },
+            VM_Client_Tools: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'VMware',
+                    'Hyper-V',
+                    'OpenStack',
+                    'AWS',
+                    'Customer Network',
+                    'Corporate Network',
+                    'Hadoop'
+                ]
+            },
+            NetBackup: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Corporate Network'
+                ]
+            },
+            Illumio: {
+                enforced: true,
+                platforms: [
+                    'windows',
+                    'linux'
+                ],
+                hardware: [
+                    'Corporate Network'
+                ]
+            }
+        }
+    },
+    CMDB: {
+        PCI: false
+    },
+    Tanium: {
+        patching: {
+            fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+            patches: [
+                {
+                    tanium_uid: '0',
+                    title: 'No Patches Required',
+                    install_status: '',
+                    uninstallable: '',
+                    severity: '',
+                    release_date: '',
+                    bulletins: '',
+                    size_in_bytes: '',
+                    ms_guid: '',
+                    kb_articles: '',
+                    cve_ids: '',
+                    urls: '',
+                    files: '',
+                    superseded: '',
+                    custom_field: '',
+                    ostype: '',
+                    product: '',
+                    classification: '',
+                    count: '1'
+                }
+            ],
+            _collected_at: '2025-10-30T01:33:14.964518',
+            patch_count: 1,
+            status: {
+                fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+                _collected_at: '2025-10-30T01:34:37.850585',
+                parent_status: [
+                    'Not Applicable',
+                    'Complete',
+                    'Not Applicable',
+                    'Not Applicable',
+                    'Not Applicable'
+                ],
+                currently_targeted: [
+                    'Yes',
+                    'No',
+                    'Yes',
+                    'Yes',
+                    'Yes'
+                ],
+                scan_configuration_id: '0',
+                error_message: 'No Scan Errors',
+                patch___is_process_running: 'Yes',
+                id: '1',
+                status: 'Waiting For Scan Interval',
+                type: 'ScanConfiguration',
+                reason: '',
+                os_type: 'Windows',
+                version: '1',
+                count: '1'
+            },
+            edc_ops_last_reboot: [
+                {
+                    edc_ops_last_reboot: '2025-10-29 04:52:38'
+                }
+            ],
+            'post-patch-status': [
+                {
+                    overall_status: 'UP',
+                    ping_status: 'Successful',
+                    remote_port_status: 'Open',
+                    logon_svc_status: 'Ready'
+                }
+            ]
+        },
+        comply: {
+            _collected_at: '2025-10-30T07:03:43.937977',
+            comply___is_vulnerable: 'true',
+            comply___compliance_percentage: 97,
+            count: '1',
+            computer_name: 'Wopspapp01.CORP.CHARTERCOM.com'
+        },
+        ip: {
+            fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+            _collected_at: '2025-10-30T07:04:01.723541',
+            ip_addresses: [
+                '10.64.170.47',
+                '142.136.224.20'
+            ],
+            adapters: [
+                '9',
+                '6',
+                '9',
+                '9',
+                '1',
+                '1',
+                '6',
+                '6'
+            ],
+            routes: [],
+            dns_servers: [
+                '142.136.252.85',
+                '142.136.253.85'
+            ]
+        },
+        performance: {
+            cpu: {
+                fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+                _collected_at: '2025-04-08T17:12:52.627545',
+                cpu_queue_length: '',
+                endpoint_score: null,
+                top_processes: []
+            },
+            disk: {
+                fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+                _collected_at: '2025-04-08T17:15:39.186481',
+                write_latency: null,
+                disk_details: {
+                    disk: 'TSE-Error: Error near:   Dim p_hours : p_hours = ||Hours||: Microsoft VBScript compilation error: Invalid character'
+                }
+            }
+        },
+        os_hardware: {
+            fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+            _collected_at: '2025-10-30T07:04:17.418498',
+            operating_system: 'Windows Server 2022 Standard',
+            last_reboot: 'Wed, 29 Oct 2025 04:52:38 +0000',
+            is_virtual: true,
+            manufacturer: 'VMware, Inc.',
+            ram: 8,
+            system_type: 'x64-based PC',
+            cpu: 'Intel(R) Xeon(R) Gold 6242 CPU',
+            cpu_speed: '2790 Mhz',
+            total_physical_processors: 2,
+            total_cores: 2,
+            total_logical_processors: 2,
+            count: 1
+        },
+        ciphers: [
+            {
+                protocol: 'TLS 1.3',
+                cipher_suite: 'TLS_AES_128_GCM_SHA256',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '17472',
+                count: '1',
+                approved: true
+            },
+            {
+                protocol: 'TLS 1.3',
+                cipher_suite: 'TLS_AES_256_GCM_SHA384',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '17472',
+                count: '1',
+                approved: true
+            },
+            {
+                protocol: 'TLS 1.3',
+                cipher_suite: 'TLS_CHACHA20_POLY1305_SHA256',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '17472',
+                count: '1',
+                approved: true
+            },
+            {
+                protocol: 'TLS 1.2',
+                cipher_suite: 'TLS_DHE_RSA_WITH_AES_128_GCM_SHA256',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '3389',
+                count: '1',
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                approved: false
+            },
+            {
+                protocol: 'TLS 1.2',
+                cipher_suite: 'TLS_DHE_RSA_WITH_AES_256_GCM_SHA384',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '3389',
+                count: '1',
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                approved: false
+            },
+            {
+                protocol: 'TLS 1.2',
+                cipher_suite: 'TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '3389',
+                count: '1',
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                approved: true
+            },
+            {
+                protocol: 'TLS 1.2',
+                cipher_suite: 'TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384',
+                compression_method: 'deflate',
+                client_certificate_requested: 'false',
+                port: '3389',
+                count: '1',
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                approved: true
+            }
+        ],
+        ciphers_collected_at: '2025-10-28T05:07:23.362730',
+        processes: [
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '80',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '135',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '445',
+                count: '1'
+            },
+            {
+                process: 'lsass.exe',
+                name: 'lsass.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '1536',
+                count: '1'
+            },
+            {
+                process: 'wininit.exe',
+                name: 'wininit.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '1537',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '1538',
+                count: '1'
+            },
+            {
+                process: 'pbx_exchange.exe',
+                name: 'Veritas VxPBX Binary file',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '1556',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '3221',
+                count: '1'
+            },
+            {
+                process: 'services.exe',
+                name: 'services.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '3249',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '3389',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '5985',
+                count: '1'
+            },
+            {
+                process: 'zabbix_agent2.exe',
+                name: 'zabbix_agent2.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '10050',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '13622',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '13623',
+                count: '1'
+            },
+            {
+                process: 'vnetd.exe',
+                name: 'vnetd.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '13724',
+                count: '1'
+            },
+            {
+                process: 'bpcd.exe',
+                name: 'bpcd.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '13782',
+                count: '1'
+            },
+            {
+                process: 'lsass.exe',
+                name: 'lsass.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '46575',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '47001',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '10.64.170.47',
+                port: '139',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '10.64.170.47',
+                port: '10002',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '10.64.170.47',
+                port: '10003',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '10.64.170.47',
+                port: '10004',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '10.64.170.47',
+                port: '10005',
+                count: '1'
+            },
+            {
+                process: 'pbx_exchange.exe',
+                name: 'Veritas VxPBX Binary file',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '1557',
+                count: '1'
+            },
+            {
+                process: 'vnetd.exe',
+                name: 'vnetd.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '3216',
+                count: '1'
+            },
+            {
+                process: 'vnetd.exe',
+                name: 'vnetd.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '3219',
+                count: '1'
+            },
+            {
+                process: 'bpcd.exe',
+                name: 'bpcd.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '3248',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '10002',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '10003',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '10004',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '10005',
+                count: '1'
+            },
+            {
+                process: 'pbx_exchange.exe',
+                name: 'Veritas VxPBX Binary file',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '17925',
+                count: '1'
+            },
+            {
+                process: 'pbx_exchange.exe',
+                name: 'Veritas VxPBX Binary file',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '17926',
+                count: '1'
+            },
+            {
+                process: 'nbpas.exe',
+                name: 'nbpas.exe',
+                protocol: 'TCP',
+                ip_address: '127.0.0.1',
+                port: '41188',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'TCP',
+                ip_address: '142.136.224.20',
+                port: '139',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '142.136.224.20',
+                port: '10002',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '142.136.224.20',
+                port: '10003',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '142.136.224.20',
+                port: '10004',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '142.136.224.20',
+                port: '10005',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '10002',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '10003',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '10004',
+                count: '1'
+            },
+            {
+                process: 'agentid-service.exe',
+                name: 'agentid-service.exe',
+                protocol: 'TCP',
+                ip_address: '0.0.0.0',
+                port: '10005',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '123',
+                count: '1'
+            },
+            {
+                process: 'snmp.exe',
+                name: 'SNMP Service',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '161',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '500',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '3389',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '4500',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '5353',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '50049',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '50121',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '52373',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '53229',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '53484',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '60760',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '0.0.0.0',
+                port: '61614',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'UDP',
+                ip_address: '10.64.170.47',
+                port: '137',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'UDP',
+                ip_address: '10.64.170.47',
+                port: '138',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '51707',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '52350',
+                count: '1'
+            },
+            {
+                process: 'dzagent.exe',
+                name: 'Centrify Agent for Windows',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '53485',
+                count: '1'
+            },
+            {
+                process: 'lsass.exe',
+                name: 'lsass.exe',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '56312',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '56771',
+                count: '1'
+            },
+            {
+                process: 'svchost.exe',
+                name: 'Host Process for Windows Services',
+                protocol: 'UDP',
+                ip_address: '127.0.0.1',
+                port: '56773',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'UDP',
+                ip_address: '142.136.224.20',
+                port: '137',
+                count: '1'
+            },
+            {
+                process: 'System',
+                name: 'System',
+                protocol: 'UDP',
+                ip_address: '142.136.224.20',
+                port: '138',
+                count: '1'
+            }
+        ],
+        processes_collected_at: '2025-10-29T03:10:46.290892',
+        registry: {
+            fqdn: 'Wopspapp01.CORP.CHARTERCOM.com',
+            _collected_at: '2025-04-30T16:21:30.956518',
+            DomainFirewallEnabled: 'Not Found',
+            PublicFirewallEnabled: 'Not Found',
+            StandardFirewallEnabled: 'Not Found',
+            DenyTerminalServerConnections: 'Not Found',
+            LocalAccountTokenFilterPolicy: 'Not Found',
+            WindowsUpdateNoAutoUpdate: 'Not Found',
+            WindowsUpdateServiceStart: 'Not Found',
+            IEESCAdministratorEnabled: 'Not Found',
+            IEESCUserEnabled: 'Not Found',
+            DotNetUseStrongCrypto: 'Not Found',
+            SCHANNELMultiProtocolUnifiedHelloClientEnabled: 'Not Found',
+            SCHANNELMultiProtocolUnifiedHelloServerEnabled: 'Not Found',
+            SCHANNELPCT10ClientEnabled: 'Not Found',
+            SCHANNELPCT10ServerEnabled: 'Not Found',
+            SCHANNELSSL20ClientEnabled: 'Not Found',
+            SCHANNELSSL20ServerEnabled: 'Not Found',
+            SCHANNELSSL30ClientEnabled: 'Not Found',
+            SCHANNELSSL30ServerEnabled: 'Not Found',
+            SCHANNELTLS10ClientEnabled: 'Not Found',
+            SCHANNELTLS10ServerEnabled: 'Not Found',
+            SCHANNELTLS11ClientEnabled: 'Not Found',
+            SCHANNELTLS11ServerEnabled: 'Not Found',
+            SCHANNELTLS12ClientEnabled: 'Not Found',
+            SCHANNELTLS12ServerEnabled: 'Not Found',
+            SCHANNELAES128Enabled: 'Not Found',
+            SCHANNELAES256Enabled: 'Not Found',
+            SCHANNELDES56Enabled: 'Not Found',
+            SCHANNELNULLEnabled: 'Not Found',
+            SCHANNELRC2128Enabled: 'Not Found',
+            SCHANNELRC240Enabled: 'Not Found',
+            SCHANNELRC256Enabled: 'Not Found',
+            SCHANNELRC4128Enabled: 'Not Found',
+            SCHANNELRC440Enabled: 'Not Found',
+            SCHANNELRC456Enabled: 'Not Found',
+            SCHANNELRC464Enabled: 'Not Found',
+            SCHANNEL3DES168Enabled: 'Not Found',
+            SCHANNELEventLogging: 'Not Found',
+            SCHANNELKeyExchangePKCSEnabled: 'Not Found',
+            SCHANNELKeyExchangeECDHEnabled: 'Not Found',
+            SCHANNELDiffieHellmanMinKeyLength: 'Not Found'
+        },
+        ORR: {
+            'general-info': [
+                {
+                    birth: '11/22/2024 07:05:20',
+                    serial: 'VMware-42 19 77 38 ae 24 88 e8-97 db 43 5e 18 cb 60 30',
+                    pagefilesize: '0',
+                    pagefilelocation: 'Pass',
+                    prodou: 'Pass',
+                    tsync: 'Pass',
+                    timezone: '(UTC) Coordinated Universal Time',
+                    nla: 'Pass',
+                    tcp: 'Fail',
+                    udp: 'Pass',
+                    winadmin_folder: 'Pass',
+                    execution_policy: 'Bypass',
+                    last_gpo: '',
+                    osbuild: '10.0.20348'
+                }
+            ],
+            'local-checks': [
+                {
+                    timeserver: 'NCESACHTRDC42.CORP.CHARTERCOM.COM',
+                    kmslicense: 'True',
+                    winupdatestatus: '@{StartMode=Manual}',
+                    winupdateservice: 'Running',
+                    winrmport: 'Listen',
+                    executionpolicy: 'RemoteSigned',
+                    ou: 'ProdOU',
+                    mpio: 'Name:  Paths:',
+                    dotnetprotocol: 'SystemDefault',
+                    qualys_folder: 'Present',
+                    splunk_folder: 'Present',
+                    winadmin_folder: 'Present',
+                    centrify_folder: 'Present',
+                    crowdstrike_folder: 'Present',
+                    vmware_folder: 'Present',
+                    flexera_folder: 'Present',
+                    zabbix_folder: 'Present',
+                    primaryip: '142.136.224.20',
+                    backnetip: 'not detected'
+                }
+            ],
+            'comm-checks': [
+                {
+                    application: 'flexera',
+                    status: 'Pass',
+                    server: 'flexera-beacon-nce.corp.chartercom.com',
+                    port: '443'
+                },
+                {
+                    application: 'flexera',
+                    status: 'Pass',
+                    server: 'flexera-beacon-cdp.corp.chartercom.com',
+                    port: '443'
+                },
+                {
+                    application: 'flexera',
+                    status: 'Pass',
+                    server: 'flexera-beacon-ncw.corp.chartercom.com',
+                    port: '443'
+                },
+                {
+                    application: 'flexera',
+                    status: 'Pass',
+                    server: 'flexera-beacon-gvl.corp.chartercom.com',
+                    port: '443'
+                },
+                {
+                    application: 'Qualys',
+                    status: 'Pass',
+                    server: 'QAGPUBLIC.QG1.APPS.QUALYS.COM',
+                    port: '443'
+                },
+                {
+                    application: 'Centrify',
+                    status: 'Pass',
+                    server: 'VM0PWCFYZTA0002.CORP.CHARTERCOM.COM',
+                    port: '8443'
+                },
+                {
+                    application: 'Info-CentrifyCollector',
+                    status: 'Pass',
+                    server: 'vm0pwcfyzta0004',
+                    port: '5063'
+                },
+                {
+                    application: 'CrowdStrike',
+                    status: 'Pass',
+                    server: 'ts01-b.cloudsink.net',
+                    port: '443'
+                },
+                {
+                    application: 'Info-SplunkDeployment',
+                    status: 'Pass',
+                    server: 'ncepnspdplmts01',
+                    port: '8089'
+                },
+                {
+                    application: 'kms',
+                    status: 'Pass',
+                    server: 'vm0pwmskmsa0005.CORP.CHARTERCOM.com',
+                    port: '1688'
+                },
+                {
+                    application: 'vipdns',
+                    status: 'Pass',
+                    server: 'gnvldnslb.corp.chartercom.com',
+                    port: '53'
+                },
+                {
+                    application: 'tanium2',
+                    status: 'Pass',
+                    server: '10.28.42.17',
+                    port: '17472'
+                },
+                {
+                    application: 'splunk',
+                    status: 'Pass',
+                    server: 'ncepnspidxdb004',
+                    port: '9997'
+                },
+                {
+                    application: 'Info-publiccoms',
+                    status: 'Pass',
+                    server: 'WWW.CHARTER.COM',
+                    port: '443'
+                },
+                {
+                    application: 'Info-crl',
+                    status: 'Pass',
+                    server: 'VM0PWENTCAW0003.CORP.CHARTERCOM.COM',
+                    port: '80'
+                },
+                {
+                    application: 'Info-crw',
+                    status: 'Pass',
+                    server: 'CERTS.CHARTERCOM.COM',
+                    port: '80'
+                },
+                {
+                    application: 'Info-crw',
+                    status: 'Fail',
+                    server: 'CERTS.CHARTERCOM.COM',
+                    port: '443'
+                },
+                {
+                    application: 'Info-ei',
+                    status: 'Pass',
+                    server: 'VM0PWENTCAA0002.CORP.CHARTERCOM.COM',
+                    port: '135'
+                },
+                {
+                    application: 'zabbix',
+                    status: 'Pass',
+                    server: 'vm0pnzabxpa0005.corp.chartercom.com',
+                    port: '10051'
+                },
+                {
+                    application: 'zabbix',
+                    status: 'Pass',
+                    server: 'vm0pnzabxpa0025.corp.chartercom.com',
+                    port: '10051'
+                },
+                {
+                    application: 'zabbix',
+                    status: 'Pass',
+                    server: 'vm0pnzabxpa0045.corp.chartercom.com',
+                    port: '10051'
+                }
+            ],
+            'registry-checks': [
+                {
+                    keyname: 'Domain Firewall',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\DomainProfile\\EnableFirewall',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Public Firewall',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\PublicProfile\\EnableFirewall',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Standard Firewall',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\StandardProfile\\EnableFirewall',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Remote Desktop',
+                    path: 'HKLM:\\System\\CurrentControlSet\\Control\\Terminal Server\\fDenyTSConnections',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'User Account Control',
+                    path: 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\LocalAccountTokenFilterPolicy',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Auto Update Disabled',
+                    path: 'HKLM:\\software\\policies\\microsoft\\windows\\windowsupdate\\AU\\NoAutoUpdate',
+                    status: 'Fail'
+                },
+                {
+                    keyname: 'Update Service Start Mode',
+                    path: 'HKLM:\\system\\currentcontrolset\\services\\wuauserv\\Start',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'IE Enhanced Security Component 1',
+                    path: 'HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}\\isinstalled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'IE Enhanced Security Component 2',
+                    path: 'HKLM:\\SOFTWARE\\Microsoft\\Active Setup\\Installed Components\\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}\\isinstalled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Info-Dot Net Force TLS 1.2',
+                    path: 'HKLM:\\SOFTWARE\\Microsoft\\.NetFramework\\v4.0.30319\\SchUseStrongCrypto',
+                    status: 'not found'
+                }
+            ],
+            'encryption-checks': [
+                {
+                    keyname: 'Protocols-Multi-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\Multi-Protocol Unified Hello\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-Multi-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\Multi-Protocol Unified Hello\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-PCT 1.0-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\PCT 1.0\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-PCT 1.0-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\PCT 1.0\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-SSL 2.0-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL 2.0\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-SSL 2.0-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL 2.0\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-SSL 3.0-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL 3.0\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-SSL 3.0-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL 3.0\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.0-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.0\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.0-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.0\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.1-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.1\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.1-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.1\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.2-Client',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.2\\Client\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Protocols-TLS 1.2-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\TLS 1.2\\Server\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-AES 128/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\AES 128/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-AES 256/256',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\AES 256/256\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-DES 56/56',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\DES 56/56\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-Null',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\NULL\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC2 128/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC2 128/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC2 40/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC2 40/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC2 56/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC2 56/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC4 128/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC4 128/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC4 40/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC4 40/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC4 56/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC4 56/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-RC4 64/128',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\RC4 64/128\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'Ciphers-Triple DES 168',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Ciphers\\Triple DES 168\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'EventLogging',
+                    path: 'HKLM:SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\EventLogging',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'KeyExchange-PKCS',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\KeyExchangeAlgorithms\\PKCS\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'KeyExchange-ECDH',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\KeyExchangeAlgorithms\\ECDH\\Enabled',
+                    status: 'Pass'
+                },
+                {
+                    keyname: 'KeyExchange-Diffie-Hellman-Server',
+                    path: 'HKLM:\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\KeyExchangeAlgorithms\\Diffie-Hellman\\ServerMinKeyBitLength',
+                    status: 'Pass'
+                }
+            ],
+            admins: [
+                {
+                    group_name: 'ADM-IT-Infrastructure-SvcAccounts'
+                },
+                {
+                    group_name: 'Domain Admins'
+                },
+                {
+                    group_name: 'P2138073ADM'
+                },
+                {
+                    group_name: 'P2815014ADM'
+                },
+                {
+                    group_name: 'RG-DC-WINDOWS-OPS-ADM'
+                },
+                {
+                    group_name: 'svc_wintask'
+                },
+                {
+                    group_name: 'svc-winopsmngt-edc'
+                },
+                {
+                    group_name: 'itops.admin'
+                },
+                {
+                    group_name: 'mordac'
+                },
+                {
+                    group_name: 'WinOps.admin'
+                }
+            ],
+            last10: [
+                {
+                    patch: 'KB5070884',
+                    install_date: '10/24/2025 00:00:00'
+                },
+                {
+                    patch: 'KB5066781',
+                    install_date: '10/15/2025 00:00:00'
+                },
+                {
+                    patch: 'KB5066139',
+                    install_date: '10/15/2025 00:00:00'
+                },
+                {
+                    patch: 'KB5007374',
+                    install_date: '11/22/2024 00:00:00'
+                }
+            ],
+            'team-nics': [
+                {
+                    team_nics: '',
+                    name: '',
+                    teaming_mode: '',
+                    lb_algorithm: '',
+                    status: '',
+                    lacptimer: '',
+                    member_count: '',
+                    members: '',
+                    vlan: ''
+                }
+            ],
+            'roles-features': [
+                {
+                    type: 'Role',
+                    name: 'FileAndStorage-Services'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'File-Services'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'FS-FileServer'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Storage-Services'
+                },
+                {
+                    type: 'Role',
+                    name: 'Web-Server'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-WebServer'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Common-Http'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Default-Doc'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Dir-Browsing'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Http-Errors'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Static-Content'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Http-Redirect'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Health'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Http-Logging'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Performance'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Stat-Compression'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Security'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Filtering'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Windows-Auth'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-App-Dev'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Net-Ext45'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-ASP'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Asp-Net45'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-ISAPI-Ext'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-ISAPI-Filter'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Mgmt-Tools'
+                },
+                {
+                    type: 'Role Service',
+                    name: 'Web-Mgmt-Console'
+                },
+                {
+                    type: 'Feature',
+                    name: 'NET-Framework-45-Features'
+                },
+                {
+                    type: 'Feature',
+                    name: 'NET-Framework-45-Core'
+                },
+                {
+                    type: 'Feature',
+                    name: 'NET-Framework-45-ASPNET'
+                },
+                {
+                    type: 'Feature',
+                    name: 'NET-WCF-Services45'
+                },
+                {
+                    type: 'Feature',
+                    name: 'NET-WCF-TCP-PortSharing45'
+                },
+                {
+                    type: 'Feature',
+                    name: 'AzureArcSetup'
+                },
+                {
+                    type: 'Feature',
+                    name: 'GPMC'
+                },
+                {
+                    type: 'Feature',
+                    name: 'Server-Media-Foundation'
+                },
+                {
+                    type: 'Feature',
+                    name: 'Windows-Defender'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RDC'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-Feature-Tools'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-SNMP'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-Role-Tools'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-AD-Tools'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-AD-PowerShell'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-ADDS'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-AD-AdminCenter'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-ADDS-Tools'
+                },
+                {
+                    type: 'Feature',
+                    name: 'RSAT-ADLDS'
+                },
+                {
+                    type: 'Feature',
+                    name: 'FS-SMB1'
+                },
+                {
+                    type: 'Feature',
+                    name: 'FS-SMB1-CLIENT'
+                },
+                {
+                    type: 'Feature',
+                    name: 'FS-SMB1-SERVER'
+                },
+                {
+                    type: 'Feature',
+                    name: 'SNMP-Service'
+                },
+                {
+                    type: 'Feature',
+                    name: 'System-DataArchiver'
+                },
+                {
+                    type: 'Feature',
+                    name: 'Telnet-Client'
+                },
+                {
+                    type: 'Feature',
+                    name: 'PowerShellRoot'
+                },
+                {
+                    type: 'Feature',
+                    name: 'PowerShell'
+                },
+                {
+                    type: 'Feature',
+                    name: 'WoW64-Support'
+                }
+            ],
+            'non-default-apps': [
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002573) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Word 2016 (KB5002789) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002669) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005',
+                    version: '12.0.21005.1',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Excel 2016 (KB5002794) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB2920716) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002792) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4464583) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft OneDrive for Business (KB4022219) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4011629) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4011574) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4032254) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Outlook 2016 (KB5002747) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Publisher 2016 (KB5002566) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft PowerPoint 2016 (KB5002790) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4462148) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4484103) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB3085538) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB5002623) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3213650) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Visio 2016 (KB5002634) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Access 2016 (KB5002720) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4464587) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4011634) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Project 2016 (KB5002652) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Skype for Business 2016 (KB5002567) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002576) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4022176) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB3213551) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft OneNote 2016 (KB5002761) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB2920678) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002766) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB2920717) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Definition Update for Microsoft Office 2016 (KB3115407) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3114524) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4484145) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4011259) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002341) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4022193) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002719) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB2920704) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB5002050) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4475581) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Wireshark 4.6.0 x64',
+                    version: '4.6.0',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.40.33816',
+                    version: '14.40.33816.0',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Assessment and Planning Toolkit',
+                    version: '9.9.13.0',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Npcap',
+                    version: '1.79',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.40.33816',
+                    version: '14.40.33816.0',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Visual Studio 2010 Tools for Office Runtime (x64)',
+                    version: '10.0.60910',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Office Professional Plus 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Notepad++ (64-bit x64)',
+                    version: '8.8.6',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Nmap 7.95',
+                    version: '7.95',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Illumio VEN',
+                    version: '23.2.22.295',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005',
+                    version: '12.0.21005.1',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4484432) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3118264) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3191929) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB2920724) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Visio Viewer 2016 (KB2920709) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002757) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002762) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5001941) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3118262) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4032236) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB5002251) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4484104) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB5002616) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3115081) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB2920720) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB4011621) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB5002466) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB4475587) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Security Update for Microsoft Office 2016 (KB3191869) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3118263) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Update for Microsoft Office 2016 (KB3114903) 64-Bit Edition',
+                    version: 'no data',
+                    date_installed: 'no data'
+                },
+                {
+                    title: 'Java 8 Update 471 (64-bit)',
+                    version: '8.0.4710.9',
+                    date_installed: '20251029'
+                },
+                {
+                    title: '7-Zip 25.01 (x64 edition)',
+                    version: '25.01.00.0',
+                    date_installed: '20251029'
+                },
+                {
+                    title: 'Java Auto Updater',
+                    version: '2.8.471.9',
+                    date_installed: '20251029'
+                },
+                {
+                    title: 'Microsoft PowerPoint MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Word MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Office Professional Plus 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Excel MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Office Shared 32-bit MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Office 32-bit Components 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251015'
+                },
+                {
+                    title: 'Microsoft Outlook MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251014'
+                },
+                {
+                    title: 'Microsoft Skype for Business MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251014'
+                },
+                {
+                    title: 'Microsoft Office Shared MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20251014'
+                },
+                {
+                    title: 'Microsoft OneNote MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250813'
+                },
+                {
+                    title: 'Outils de vérification linguistique 2016 de Microsoft Office - Français',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250709'
+                },
+                {
+                    title: 'Microsoft Office Proofing Tools 2016 - English',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250709'
+                },
+                {
+                    title: 'Herramientas de corrección de Microsoft Office 2016: español',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250709'
+                },
+                {
+                    title: 'Zabbix Agent2 Plugins (64-bit)',
+                    version: '7.2.5.2400',
+                    date_installed: '20250423'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.40.33816',
+                    version: '14.40.33816',
+                    date_installed: '20250423'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2022 X86 Additional Runtime - 14.40.33816',
+                    version: '14.40.33816',
+                    date_installed: '20250423'
+                },
+                {
+                    title: 'Illumio VEN',
+                    version: '23.2.22.295',
+                    date_installed: '20250411'
+                },
+                {
+                    title: 'Illumio VEN WFP Driver',
+                    version: '22.50.0.9608',
+                    date_installed: '20250411'
+                },
+                {
+                    title: 'Microsoft Groove MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Office Proofing (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Office OSM UX MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Publisher MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft InfoPath MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Office OSM MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Office Shared Setup Metadata MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Access Setup Metadata MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft DCF MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'Microsoft Access MUI (English) 2016',
+                    version: '16.0.4266.1001',
+                    date_installed: '20250409'
+                },
+                {
+                    title: 'PuTTY release 0.83 (64-bit)',
+                    version: '0.83.0.0',
+                    date_installed: '20250326'
+                },
+                {
+                    title: 'WinSCP 6.3.7',
+                    version: '6.3.7',
+                    date_installed: '20250324'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2022 X64 Additional Runtime - 14.40.33816',
+                    version: '14.40.33816',
+                    date_installed: '20250324'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816',
+                    version: '14.40.33816',
+                    date_installed: '20250324'
+                },
+                {
+                    title: 'Microsoft Edge',
+                    version: '141.0.3537.99',
+                    date_installed: '20240328'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219',
+                    version: '10.0.40219',
+                    date_installed: '20230823'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219',
+                    version: '10.0.40219',
+                    date_installed: '20230823'
+                },
+                {
+                    title: 'Microsoft Visual Studio 2010 Tools for Office Runtime (x64)',
+                    version: '10.0.60915',
+                    date_installed: '20230823'
+                },
+                {
+                    title: 'Centrify Access Module for PowerShell 5.6.0.157',
+                    version: '5.6.0.157',
+                    date_installed: '20230404'
+                },
+                {
+                    title: 'Centrify Access Manager 5.6.0.157',
+                    version: '5.6.0.157',
+                    date_installed: '20230404'
+                },
+                {
+                    title: 'Centrify Licensing Report 5.6.0.157',
+                    version: '5.6.0.157',
+                    date_installed: '20230404'
+                },
+                {
+                    title: 'Centrify ADUC property page extension 5.6.0.157',
+                    version: '5.6.0.157',
+                    date_installed: '20230404'
+                },
+                {
+                    title: 'Get Local Admins GUI',
+                    version: '2.4.0',
+                    date_installed: '20221213'
+                },
+                {
+                    title: 'CrystalDiskMark 8.0.4b',
+                    version: '8.0.4b',
+                    date_installed: '20221025'
+                },
+                {
+                    title: 'Google Chrome',
+                    version: '141.0.7390.123',
+                    date_installed: '20220303'
+                },
+                {
+                    title: 'Carbonite Replication',
+                    version: '8.4.0.288.0',
+                    date_installed: '20200916'
+                },
+                {
+                    title: 'Microsoft SQL Server 2012 Express LocalDB',
+                    version: '11.0.2100.60',
+                    date_installed: '20190828'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005',
+                    version: '12.0.21005',
+                    date_installed: '20181002'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.21005',
+                    version: '12.0.21005',
+                    date_installed: '20181002'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005',
+                    version: '12.0.21005',
+                    date_installed: '20181002'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.21005',
+                    version: '12.0.21005',
+                    date_installed: '20181002'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161',
+                    version: '9.0.30729.6161',
+                    date_installed: '20180323'
+                },
+                {
+                    title: 'Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161',
+                    version: '9.0.30729.6161',
+                    date_installed: '20180323'
+                }
+            ],
+            'agent-status': [
+                {
+                    qualys: 'pass',
+                    splunk: 'pass',
+                    centrify: 'pass',
+                    crowdstrike: 'pass',
+                    tanium: 'pass',
+                    flexera: 'pass',
+                    netbackup: 'pass',
+                    zabbix: 'pass'
+                }
+            ],
+            'agent-version': [
+                {
+                    qualys: '6.2.5.4',
+                    splunk: '9.4.3.0',
+                    crowdstrike: '7.26.19813.0',
+                    tanium: '7.7.3.8207',
+                    flexera: '24.0.1511',
+                    netbackup: '10.5.0.1',
+                    zabbix: '7.2.5.2400'
+                }
+            ],
+            'disk-details': [
+                {
+                    name: '\\\\?\\Volume{2f7a6d65-0000-0000-0000-100000000000}\\',
+                    mount_point: 'D:\\',
+                    label: 'System Reserved',
+                    size: '499 MB',
+                    free_space: '465 MB',
+                    media_type: 'Fixed',
+                    file_system: 'NTFS'
+                },
+                {
+                    name: 'D:\\',
+                    mount_point: 'C:\\',
+                    label: 'Data',
+                    size: '549 GB',
+                    free_space: '116 GB',
+                    media_type: 'Fixed',
+                    file_system: 'NTFS'
+                },
+                {
+                    name: 'C:\\',
+                    mount_point: 'C:\\',
+                    label: 'Data',
+                    size: '198 GB',
+                    free_space: '25 GB',
+                    media_type: 'Fixed',
+                    file_system: 'NTFS'
+                },
+                {
+                    name: '\\\\?\\Volume{2f7a6d65-0000-0000-0000-90da31000000}\\',
+                    mount_point: 'C:\\',
+                    label: 'Data',
+                    size: '595 MB',
+                    free_space: '85 MB',
+                    media_type: 'Fixed',
+                    file_system: 'NTFS'
+                }
+            ],
+            blocksize: [
+                {
+                    driveletter: ':\\',
+                    blocksize: '4096',
+                    disklabel: 'System Reserved',
+                    sizegb: '0',
+                    freespacegb: '0'
+                },
+                {
+                    driveletter: 'C:\\',
+                    blocksize: '4096',
+                    disklabel: 'Data',
+                    sizegb: '199',
+                    freespacegb: '25'
+                },
+                {
+                    driveletter: ':\\',
+                    blocksize: '4096',
+                    disklabel: 'Data',
+                    sizegb: '1',
+                    freespacegb: '0'
+                },
+                {
+                    driveletter: 'D:\\',
+                    blocksize: '4096',
+                    disklabel: 'Data',
+                    sizegb: '550',
+                    freespacegb: '117'
+                }
+            ],
+            ipdetails: [
+                {
+                    dns_server: '142.136.252.85',
+                    static_ip_addresses: '10.64.170.47',
+                    destination: '0.0.0.0',
+                    gateway: '10.64.170.1',
+                    subnet_mask: '0.0.0.0',
+                    network_ip_gateway: '10.64.170.1',
+                    adapter_name: 'vmxnet3 Ethernet Adapter',
+                    'speed_(mbps)': '10000',
+                    mac_address: '00-50-56-99-B7-89',
+                    ip_address: '10.64.170.47'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '0.0.0.0',
+                    gateway: '142.136.224.1',
+                    subnet_mask: '0.0.0.0',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'vmxnet3 Ethernet Adapter #2',
+                    'speed_(mbps)': '10000',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '10.64.170.0',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.255.255.0',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (IP)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '10.64.170.47',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.255.255.255',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (IPv6)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '127.0.0.0',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.0.0.0',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (Network Monitor)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '127.0.0.1',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.255.255.255',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (Network Monitor)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '142.136.224.0',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.255.255.0',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (Network Monitor)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                },
+                {
+                    dns_server: '142.136.253.85',
+                    static_ip_addresses: '142.136.224.20',
+                    destination: '142.136.224.20',
+                    gateway: '0.0.0.0',
+                    subnet_mask: '255.255.255.255',
+                    network_ip_gateway: '142.136.224.1',
+                    adapter_name: 'WAN Miniport (Network Monitor)',
+                    'speed_(mbps)': '0.1152',
+                    mac_address: '00-50-56-99-64-40',
+                    ip_address: '142.136.224.20'
+                }
+            ],
+            'disk-free': [
+                {
+                    mount: 'C:',
+                    percent: '30+%'
+                }
+            ]
+        },
+        'general-info_collected_at': '2025-08-28T14:02:43.485420',
+        'local-checks_collected_at': '2025-10-29T02:19:58.200089',
+        'comm-checks_collected_at': '2025-10-29T16:15:07.610146',
+        'registry-checks_collected_at': '2025-08-28T13:57:18.786472',
+        'encryption-checks_collected_at': '2025-08-28T15:52:20.059229',
+        'admins-checks_collected_at': '2025-10-17T03:16:09.327233',
+        'last10-checks_collected_at': '2025-10-25T03:41:33.531613',
+        'team-nics-checks_collected_at': '2025-10-27T04:23:47.381352',
+        'roles-features-checks_collected_at': '2025-08-28T17:47:30.983766',
+        'non-default-apps_collected_at': '2025-10-29T03:42:18.899376',
+        'agent-status_collected_at': '2025-08-29T00:19:38.797728',
+        'agent-version_collected_at': '2025-10-15T00:24:13.943759',
+        'disk-details_collected_at': '2025-10-29T02:31:29.033647',
+        blocksize_collected_at: '2025-10-25T10:28:35.846656',
+        ipdetails_collected_at: '2025-08-29T03:24:34.613430',
+        'applicable-patches_collected_at': '2025-09-04T15:09:07.706074',
+        'cis-findings_collected_at': '2025-10-30T01:08:03.918679',
+        'patch-health_collected_at': '2025-10-30T01:12:03.227099',
+        'disk-free_collected_at': '2025-08-29T15:52:23.822652',
+        'last-reboot_collected_at': '2025-10-30T01:38:10.231449',
+        'post-patch-status_collected_at': '2025-10-30T01:41:38.568679'
+    }
+}
